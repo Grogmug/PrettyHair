@@ -11,6 +11,6 @@ namespace PrettyHair
         public int ID;
         public decimal Price;
         public int amount;
-        public  
+        public
     }
 }

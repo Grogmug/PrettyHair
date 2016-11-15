@@ -8,5 +8,13 @@ namespace PrettyHair
 {
     public class WareRespository
     {
+        public int id;
+        public int price;
+        public int amount;
+        //designation
+        
+
     }
 }
+
+// En lille test
