@@ -10,15 +10,15 @@ namespace PrettyHair
     {
         public int Id { get; set; }
         public decimal Price { get; set; }
-        public int Amount { get; set; }
-        public string Designation { get; set; }
+        
+        public string Description { get; set; }
 
-        public Ware(int id, decimal price, int amount, string designation)
+        public Ware(int id, decimal price, string description)
         {
             this.Id = id;
             this.Price = price;
-            this.Amount = amount;
-            this.Designation = designation;
+
+            this.Description = description;
         }
     }
 }

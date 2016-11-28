@@ -6,14 +6,23 @@ using System.Threading.Tasks;
 
 namespace PrettyHair
 {
-    public class ItemRepository
+    public class WareRepository
     {
-        private List<Ware> wareList;
+        public List<Ware> wareList;
 
-        public ItemRepository()
+        public WareRepository()
         {
             wareList = new List<Ware>();
-            wareList.Add(new Ware(1, 20, 10, "HyldeB"));
+            wareList.Add(new Ware(1, 20, "Shampoo: Feeling Good Hair"));
+            wareList.Add(new Ware(2, 30, "Awesome Saks"));
+            wareList.Add(new Ware(3, 5, "Rusten Saks"));
+            wareList.Add(new Ware(4, 100, "Butters Creamy Goo"));
+            wareList.Add(new Ware(5, 50, "Hair Color"));
+            wareList.Add(new Ware(6, 25, "HairClue"));
+            wareList.Add(new Ware(7, 60, "Stor Saks"));
+            wareList.Add(new Ware(8, 40, "Balsam"));
+
+
         }
 
 
@@ -31,8 +40,8 @@ namespace PrettyHair
             Ware oldWare = wareList.Find(x => x.Id == w.Id);
 
             oldWare.Price = w.Price;
-            oldWare.Amount = w.Amount;
-            oldWare.Designation = w.Designation;
+            
+            oldWare.Description = w.Description;
         }
 
         public List<Ware> GetWares()
